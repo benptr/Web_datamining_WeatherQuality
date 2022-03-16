@@ -1,0 +1,13 @@
+- au moins 2 classes
+- intances dans chaque classes
+- données viennent de 3 sources différentes
+  (API air quality, csv country, API weather)
+
+- external query (dbpedia??)
+- faire une 3e classe: voyage ? (id, ville départ, ville
+arrivée, différence qualité de température)
+- Faire des queries avec les classes (SPARQL 3pts, SWRL 1pt)
+- export en RDF ou JSON-LD
+
+BONUS: -faire le GUI (2 pts)
+-realtime dynamic data update (2pts)
