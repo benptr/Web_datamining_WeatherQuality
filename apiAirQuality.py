@@ -1,5 +1,6 @@
 import requests, json
 import pandas as pd
+import json
 
 def getAirQuality(city="paris"):
     try:
@@ -25,3 +26,12 @@ def CountryData(country="France"):
         result[elmt] = {"airQ":getAirQuality(elmt),"weather":getWeather(elmt)}
         print(result[elmt])
     return result
+
+def exportJson(country="France"):
+    jsonf = CountryData(country="France")
+    jsonString = json.dumps(jsonf)
+    jsonFile = open("dataFrance.json", "w")
+    jsonFile.write(jsonString)
+    jsonFile.close()
+
+exportJson()
