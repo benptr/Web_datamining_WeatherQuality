@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#aqi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#aqi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#latitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#longitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#main -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#main">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ">
+        <rdfs:comment>Air Quality in French areas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location">
+        <rdfs:comment>French cities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather">
+        <rdfs:comment>Temperature of French areas</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
