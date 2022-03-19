@@ -125,6 +125,25 @@
     <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather">
         <rdfs:comment>Temperature of French areas</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

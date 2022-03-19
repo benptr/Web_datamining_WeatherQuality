@@ -27,7 +27,7 @@ location_list=[]
 
 _id=1
 print(json_data['Wittenheim'])
-"""
+
 for row in json_data:
     #we identify by an id
     
