@@ -24,7 +24,8 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#aqi -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#aqi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -33,8 +34,31 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#city -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#city">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#humidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#humidity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -42,7 +66,8 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#latitude -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#latitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
@@ -51,26 +76,9 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#longitude -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#longitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#main -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#main">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#status -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#status">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -78,17 +86,49 @@
     <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#time -->
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp_max -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#time">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp_max">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp_min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#temp_min">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#today_o3_average -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#today_o3_average">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#tomorrow_o3_average -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#tomorrow_o3_average">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
@@ -104,17 +144,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ -->
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ">
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf">
         <rdfs:comment>Air Quality in French areas</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location -->
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location">
+    <owl:Class rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City">
         <rdfs:comment>French cities</rdfs:comment>
     </owl:Class>
     
@@ -131,19 +171,73 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // General axioms
+    // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#AirQ"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Location"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
-        </owl:members>
-    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Marseille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Marseille">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <aqi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">56.0</aqi>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marseille</city>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clear sky</description>
+        <humidity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</humidity>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.296482</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.36978</longitude>
+        <temp rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.0</temp>
+        <temp_max rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.0</temp_max>
+        <temp_min rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</temp_min>
+        <today_o3_average rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</today_o3_average>
+        <tomorrow_o3_average rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.0</tomorrow_o3_average>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Paris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <aqi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">82.0</aqi>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paris</city>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clear sky</description>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.856613</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.352222</longitude>
+        <temp rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.0</temp>
+        <temp_max rdf:datatype="http://www.w3.org/2001/XMLSchema#float">19.0</temp_max>
+        <temp_min rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.0</temp_min>
+        <today_o3_average rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</today_o3_average>
+        <tomorrow_o3_average rdf:datatype="http://www.w3.org/2001/XMLSchema#float">29.0</tomorrow_o3_average>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Rouen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Rouen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Airquf"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2022/2/untitled-ontology-30#Weather"/>
+        <aqi rdf:datatype="http://www.w3.org/2001/XMLSchema#float">44.0</aqi>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rouen</city>
+        <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloudy sky</description>
+        <humidity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</humidity>
+        <latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">49.443233</latitude>
+        <longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.099971</longitude>
+        <temp rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</temp>
+        <temp_max rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.0</temp_max>
+        <temp_min rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</temp_min>
+        <today_o3_average rdf:datatype="http://www.w3.org/2001/XMLSchema#float">25.0</today_o3_average>
+        <tomorrow_o3_average rdf:datatype="http://www.w3.org/2001/XMLSchema#float">27.0</tomorrow_o3_average>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
