@@ -1,21 +1,16 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 19 16:24:42 2022
-
-@author: admin
-"""
-
 import json 
-path = "C:\\Users\\admin\\source\\repos\\Web_datamining_WeatherQuality\\dataFrance.json"
+import pandas as pd 
+
+path = r".\dataFrance.json"
 
 #function to load data
 def load_data(path):
     json_data = []
-    for line in open(path,'r',encoding='utf8', sep=","):
+    for line in open(path,'r',encoding='utf8'):
         json_data.append(json.loads(line))
     return json_data
       
-json_data = load_data(path)
+json_data = pd.read_json(path)
 
 airQ=dict()
 weather=dict()
@@ -26,7 +21,8 @@ weather_list=[]
 location_list=[]
 
 _id=1
-print(json_data['Wittenheim'])
+print(json_data[1])
+
 
 for row in json_data:
     #we identify by an id
@@ -60,5 +56,4 @@ for row in json_data:
     location_list.append(location)
     _id+=1
 
-print(airQ_list[0:10])
-"""
+#print(airQ_list[0:10])
