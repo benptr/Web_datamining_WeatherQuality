@@ -1,0 +1,33 @@
+6. SPARQL QUERIES (à faire direct sur protege ou jena -> Audrey puis
+Benjamin : les adapter sur l'app)
+
+1. List the instances of City (list all the cities)
+(si c'est trop lourd mettre un limit 10)
+SELECT ?city ?longitude ?latitude
+WHERE {
+	 ?city rdf:type ns:City .
+	   	
+}
+
+2. List all today's O3 of cities
+(si c'est trop lourd mettre un limit 10)
+
+3. Display the description (description, humidity, temp) of Paris
+
+4. Display all the cities where the predicted 03 is higher than the current
+03. 
+
+7. Propose 5 SPARQL Queries:
+a) A query that contains at least 2 optional graph Patterns
+-> graph that display the aqi and O3 index of the chosen city
+
+b) A query that contains at least 2 alternatives and conjunctions
+-> display all the cities WHERE the current temperature is higher than 15 
+AND less than 20
+
+c) A query that contains a CONSTRUCT query form
+
+d) A query that contains an ASK query form
+
+e) A query that contains a DESCRIBE query form
+
