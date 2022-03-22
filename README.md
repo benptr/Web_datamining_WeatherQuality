@@ -15,7 +15,6 @@
     * [Introduction](#introduction)
     * [Tasks achieved](#tasks_achieved)
     * [Conclusion](#conclusion)
-  * [Notebook](#notebook)
   * [Usage - API](#usage)
   * [Architecture](#architecture)
 
@@ -39,7 +38,7 @@ Finally, the project also includes an application displaying the different crite
 
 The project is organized in 3 main parts: 
 <br><br>
-•	  Part I - Data selection, Data cleaning and data exportation 
+•	 **Part I - Data selection, Data cleaning and data exportation**
 <br> After some researches about our project, we decided to choose datasets from these 3 APIs: <br> 
 [AirQualityApi](https://aqicn.org/api/fr/) <br>
 [WeatherAPI](https://openweathermap.org/api) <br>
@@ -48,7 +47,7 @@ We then created a [Script Python](https://github.com/benptr/Web_datamining_Weath
 <br>
 We then open this file in a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb), studied the different datatypes of features, cleaned it to make it user friendly and finally exported it into 3 different CSV files (weather.csv, city.csv, airquf.csv). 
 <br><br>
-•	  Part II - Modeling the Ontology, Populate the ontology 
+•	 **Part II - Modeling the Ontology, Populate the ontology**
 <br>
 First, we had to model our ontology using the application Protégé. We created 3 classes (Airquf, Weather and City), 11 data properties and 3 object properties, according to the features of the csv files we obtained. We defined for each properties their domain and range (according to the datatypes)
 <br> Then we populated the ontology with some instances we created by hand in order to test the consistency of our ontology thanks to the reasoner. 
@@ -56,12 +55,11 @@ First, we had to model our ontology using the application Protégé. We created 
 Finally, we had to load all the data from our csv file to our ontology. We reopened our Jupyter Notebook, imported the library RDFLIB and its different components to populate our ontology with our data matching our classes and properties defined in Protégé. Then we exported a final file in .owl format, containing our ontology populated with real data. Here is a screenshot of the ontology we obtained on Protégé: 
 ![image](https://user-images.githubusercontent.com/61688477/159586390-7cfed3c3-1912-465a-973a-446b5a6d85f6.png) 
 <br><br>
-
-
-•	Part III - Querying the ontology <br>
+• **Part III - Querying the ontology**
+<br> 
 We created several SPARQL Queries directly on the Snap SPARQL Query window of Protégé listed [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL_QUERIES.docx). Those queries will be then used for our final application.
 <br><br>
-•  Part IV - Making the application
+•  **Part IV - Making the application**
  
 ### Conclusion
 
