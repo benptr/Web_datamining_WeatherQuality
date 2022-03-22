@@ -21,7 +21,7 @@ Villeneuve-sur-Lot,overcast clouds,79.0,13.170000000000016,12.03000000000003,13.
 Villeneuve-Saint-Georges,clear sky,35.0,14.170000000000016,12.800000000000011,15.060000000000002
 Villeneuve-le-Roi,clear sky,35.0,14.160000000000025,12.760000000000048,15.020000000000039
 Villeneuve-la-Garenne,clear sky,35.0,14.100000000000023,12.850000000000023,15.110000000000014
-Villenave-d’Ornon,,0.0,0.0,0.0,0.0
+Villenave-d’Ornon,No description,0.0,0.0,0.0,0.0
 Villemomble,clear sky,35.0,13.850000000000023,12.590000000000032,14.850000000000023
 Villejuif,clear sky,35.0,13.78000000000003,12.410000000000025,14.670000000000016
 Villefranche-sur-Saône,overcast clouds,71.0,9.890000000000043,8.090000000000032,11.120000000000005
@@ -352,7 +352,7 @@ La Ciotat,overcast clouds,62.0,14.450000000000045,13.800000000000011,15.43999999
 La Chapelle-sur-Erdre,clear sky,38.0,13.160000000000025,12.57000000000005,13.920000000000016
 La Celle-Saint-Cloud,clear sky,36.0,13.25,12.020000000000039,14.28000000000003
 Jouy-le-Moutier,clear sky,40.0,13.010000000000048,12.050000000000011,14.75
-Joué-lés-Tours,,0.0,0.0,0.0,0.0
+Joué-lés-Tours,No description,0.0,0.0,0.0,0.0
 Joinville-le-Pont,clear sky,35.0,14.110000000000014,12.770000000000039,15.04000000000002
 Ivry-sur-Seine,clear sky,35.0,14.160000000000025,12.810000000000002,15.07000000000005
 Istres,clear sky,67.0,14.590000000000032,14.080000000000041,14.840000000000032
@@ -613,22 +613,22 @@ Abbeville,clear sky,62.0,12.510000000000048,12.490000000000009,13.05000000000001
 Villeneuve-d'Ascq,clear sky,40.0,12.75,11.850000000000023,13.25
 Les Ulis,clear sky,36.0,13.189999999999998,11.560000000000002,13.740000000000009
 Bourgoin-Jallieu,overcast clouds,85.0,9.450000000000045,8.660000000000025,10.850000000000023
-Marseille 01,,0.0,0.0,0.0,0.0
-Marseille 02,,0.0,0.0,0.0,0.0
-Marseille 03,,0.0,0.0,0.0,0.0
+Marseille 01,No description,0.0,0.0,0.0,0.0
+Marseille 02,No description,0.0,0.0,0.0,0.0
+Marseille 03,No description,0.0,0.0,0.0,0.0
 Marseille 04,overcast clouds,65.0,14.520000000000039,13.710000000000036,14.810000000000002
-Marseille 05,,0.0,0.0,0.0,0.0
-Marseille 06,,0.0,0.0,0.0,0.0
-Marseille 07,,0.0,0.0,0.0,0.0
-Marseille 08,,0.0,0.0,0.0,0.0
-Marseille 10,,0.0,0.0,0.0,0.0
-Marseille 09,,0.0,0.0,0.0,0.0
-Marseille 11,,0.0,0.0,0.0,0.0
-Marseille 12,,0.0,0.0,0.0,0.0
-Marseille 13,,0.0,0.0,0.0,0.0
+Marseille 05,No description,0.0,0.0,0.0,0.0
+Marseille 06,No description,0.0,0.0,0.0,0.0
+Marseille 07,No description,0.0,0.0,0.0,0.0
+Marseille 08,No description,0.0,0.0,0.0,0.0
+Marseille 10,No description,0.0,0.0,0.0,0.0
+Marseille 09,No description,0.0,0.0,0.0,0.0
+Marseille 11,No description,0.0,0.0,0.0,0.0
+Marseille 12,No description,0.0,0.0,0.0,0.0
+Marseille 13,No description,0.0,0.0,0.0,0.0
 Marseille 14,broken clouds,66.0,14.330000000000041,13.5,14.600000000000023
-Marseille 15,,0.0,0.0,0.0,0.0
-Marseille 16,,0.0,0.0,0.0,0.0
-La Defense,,0.0,0.0,0.0,0.0
-Saint-Quentin-en-Yvelines,,0.0,0.0,0.0,0.0
-Cergy-Pontoise,,0.0,0.0,0.0,0.0
+Marseille 15,No description,0.0,0.0,0.0,0.0
+Marseille 16,No description,0.0,0.0,0.0,0.0
+La Defense,No description,0.0,0.0,0.0,0.0
+Saint-Quentin-en-Yvelines,No description,0.0,0.0,0.0,0.0
+Cergy-Pontoise,No description,0.0,0.0,0.0,0.0
