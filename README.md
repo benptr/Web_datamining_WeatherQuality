@@ -27,7 +27,7 @@ For this project, we have chosen had to study a compilation of 3 different datas
 
 <br> 
 The project contains a preliminary data selection, data cleaning, data exploration and data exportation in .owl and .csv files.
-All those can be found in the python file "apiAirQuality.py" and the jupyter notebook "Data_creation_csv.ipynb".
+All those can be found in the python file [Go to the study](../main/apiAirQulity.py) and the jupyter notebook [Go to the study](../main/Data_creation_csv.ipynb)
 
 The project also includes the SPARQL queries we invented according to our dataset.
 
