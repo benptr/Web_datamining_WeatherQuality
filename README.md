@@ -26,7 +26,7 @@
 
 *This project is the final project of ESILV course Web Datamining And Semantics* 
 <br>
-For this project, we have chosen had to study a compilation of 3 different datasets from 3 API about weather, Air Quality and Location in order to realise an Weather Quality application for French cities. We have chosen to realise this project in Python Language, as we are more familiar with it. 
+For this project, we have chosen had to study a compilation of 3 different datasets from 3 API about weather, Air Quality and Location using geolocated data, in order to realise an Weather Quality application for French cities. We have chosen to realise this project in Python Language, as we are more familiar with it. 
 
 <br> 
 The project contains a preliminary data selection, data cleaning, data exploration and data exportation 
@@ -59,7 +59,7 @@ Finally, we had to load all the data from our csv file to our ontology. We reope
 
 
 •	Part III - Querying the ontology <br>
--> SPARQL QUERIES: see doc world 
+We created several SPARQL Queries directly on the Snap SPARQL Query window of Protégé listed [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL QUERIES.docx)
 <br><br>
 •  Part IV - Making the application
  
