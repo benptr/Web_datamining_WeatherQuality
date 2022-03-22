@@ -11,10 +11,10 @@
 </h1> 
 
 ## Table of contents
-  * [About the project](#about_the_project)
-    *[Introduction](#introduction)
-    *[Tasks achieved](#tasks_achieved)
-    *[Conclusion](#conclusion)
+  * [About the project](#about_the_project) <br>
+    * [Introduction](#introduction)
+    * [Tasks achieved](#tasks_achieved)
+    * [Conclusion](#conclusion)
   * [Notebook](#notebook)
   * [Usage - API](#usage)
   * [Architecture](#architecture)
@@ -40,7 +40,7 @@ Finally, the project also includes an application displaying the different crite
 The project is organized in 3 main parts: 
 <br><br>
 •	  Part I - Data selection, Data cleaning and data exportation 
-<br> After some researches about our project, we decided to choose datasets from these 3 APIs <br> 
+<br> After some researches about our project, we decided to choose datasets from these 3 APIs: <br> 
 [AirQualityApi](https://aqicn.org/api/fr/) <br>
 [WeatherAPI](https://openweathermap.org/api) <br>
 [Cities](https://datahub.io/core/world-cities) <br>
