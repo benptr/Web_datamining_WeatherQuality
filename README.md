@@ -40,10 +40,10 @@ The project is organized in 3 main parts:
 <br> After some researches about our project, we decided to choose datasets from these 3 APIs <br> 
 [AirQualityApi](https://aqicn.org/api/fr/) <br>
 [WeatherAPI](https://openweathermap.org/api) <br>
-[Cities](https://datahub.io/core/world-cities <br>
-We then created a script Python [ScriptPython](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py) to select the features that interested us (Citie's name, coordinates, temperature and weather condition, air quality indexes). We exported the data in a JSON file (dataFrance.json)
+[Cities](https://datahub.io/core/world-cities) <br>
+We then created a [Script Python](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py) to select the features that interested us (Citie's name, coordinates, temperature and weather condition, air quality indexes). We exported the data in a JSON file (dataFrance.json)
 <br>
-We then open this file in a Jupyter Notebook [JupyterNotebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb), studied the different datatypes of features, cleaned it to make it user friendly and finally exported it into 3 different CSV files (weather.csv, city.csv, airquf.csv). 
+We then open this file in a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb), studied the different datatypes of features, cleaned it to make it user friendly and finally exported it into 3 different CSV files (weather.csv, city.csv, airquf.csv). 
 <br><br>
 •	  Part II - Modeling the Ontology, Populate the ontology 
 <br>
