@@ -2,7 +2,7 @@
   <br>
    <img src=https://aqicn.org/images/aqicn.png>
   <br>
-  Web Datamining and Semantics Project - Weather Quality App 
+  Web Datamining and Semantics Project - Weather / Air Quality App 
   <h2 align="center">
     CHMIEL Audrey & DONIER Marie & PORTERIE Benjamin
     <br>
