@@ -12,6 +12,9 @@
 
 ## Table of contents
   * [About the project](#about_the_project)
+    *[Introduction](#introduction)
+    *[Tasks achieved](#tasks_achieved)
+    *[Conclusion](#conclusion)
   * [Notebook](#notebook)
   * [Usage - API](#usage)
   * [Architecture](#architecture)
