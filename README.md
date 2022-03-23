@@ -57,9 +57,12 @@ Finally, we had to load all the data from our csv file to our ontology. We reope
 <br><br>
 • **Part III - Querying the ontology**
 <br> 
-We created several SPARQL Queries directly on the Snap SPARQL Query window of Protégé listed [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL_QUERIES.docx). Those queries will be then used for our final application.
+We created several SPARQL Queries directly on the Snap SPARQL Query window of Protégé listed in this [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL_QUERIES.docx). Those queries will be then used for our final application.
 <br><br>
 •  **Part IV - Making the application**
- 
+<br>
+Here is the [Script Python](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py) we used to create our final application. We decided to use the framework Flask to design our web app. <br> In this app, the user can get the location of any French city on a map and can display Weather information and Air Quality information of a specific city. We used html to try to make our app user friendly. 
+<br> <br>
 ### Conclusion
+This project allowed us to learn. It was i
 
