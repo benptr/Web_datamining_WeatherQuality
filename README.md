@@ -65,3 +65,12 @@ Here is the [Script Python](https://github.com/benptr/Web_datamining_WeatherQual
 <br> <br>
 ### Conclusion
 This project has represented a real challenge for our team, both in its understanding and its realization. Indeed, we did not necessarily have all the skills required from the point of view of ontologies / creation of SPARQL queries, which required significant research work. We appreciated the freedom taken on this subject to choose our own dataset and clean our data according to the targeted features. Finally, we also enjoyed making the final functional application.
+
+## Usage - API 
+<br>
+To launch our API, you need to clone (or fork) the whole project. 
+Then you need to open it on VS Code.
+You have to launch the [Script Python](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py) by typing on the Terminal Console "python app.py".
+![image](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/screen1.png)
+<br> Then you have to click on the link that will open the app on the browser.
+![image](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/screen3.png)
