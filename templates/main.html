@@ -2,22 +2,37 @@
 <html>
   <head>
     <title>Search</title>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  <!--
+    -->
   </head>
   <body>
     <div class="main-block">
-      <div class="main-block">
+      <FONT size="5pt"> 
+      <FONT color="LightSeaGreen"> 
       <h1>City Weather and Air Quality</h1>
+      </FONT>
+      </FONT>
     </div>
       <form action="/resultcity/" method="post">
-        <div class="info">
-          <p>Click on city if you want to see the ctites that are in our dataset.</p>
-        </div>
-        <button id="search" href='/resultcity?submitted=true' class="button">City</button>
+    
+    <div class="info">
+          <p>Click on the "City" button if you want to have a look at some of the cities that are in our dataset.</p>
+        <button id="search" href='/resultcity?submitted=true' class="button"> City </button>
       </form>
-    </div>   
-    <p>Please enter the name of a French city in this format : Paris, and select the type of information needed</p>
+    </div>  
+
+    <div>
+      <img src="https://yourutahyourfuture.org/media/k2/items/cache/8b6e33345ac8d5ffd9cf0d107a7d9e9d_Generic.jpg" align="right" width="200px" height="200px"/>
     </div>
+
+
+
+		<br>
+    <p>Please enter the name of a French city in this format : Paris</p>
+    <p>Select the type of information you want to consult.</p>
     <form action="/resultweather/" method="post">
       <div class="info">
         <input type="text" name="city" placeholder="City">
@@ -28,9 +43,11 @@
           <option value="both">Both</option>
         </select>
       </div>
+
+      <br>
       <button id="search" href='/resultweather?submitted=true' class="button">Weather</button>
     </form>
-  </div>   
+ 
     <script>
           if (document.location.href.indexOf("submitted=true") > -1){
             $.dialog({
