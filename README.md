@@ -27,14 +27,15 @@
 For this project, we have chosen had to study a compilation of 3 different datasets from 3 API about weather, Air Quality and Location using geolocated data, in order to realise an Weather Quality application for French cities. <br> We have chosen to realise this project in Python Language, as we are more familiar with it. 
 
 <br> 
-*Main files*
-The project contains a preliminary data selection ([see this file](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py), data cleaning, data exploration and data exportation on a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb).
+**Main files and steps** 
+<br>
+The project contains a preliminary data selection [see this file](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py), data cleaning, data exploration and data exportation on a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb).
 <br>
 The project also include our primary [ontology model](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/ontology.owl) and the [populated one](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/final_ontology.owl), both realized on Protégé. 
 <br>
-The project also includes the SPARQL queries we created on Protege according to our dataset listed in this [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL_QUERIES.docx)
+The project also includes the SPARQL queries we created on Protege according to our dataset listed in this [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL_QUERIES.docx).
 <br>
-Finally, the project also includes an application displaying the different criterias we want to analyse and predict, accessible by running this [file](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py)
+Finally, the project also includes an application displaying the different criterias we want to analyse and predict, accessible by running this [file](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py).
 
 ### Tasks achieved 
 
