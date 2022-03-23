@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="main-block">
+      <h1>City Weather and Air Quality</h1>
+    </div>
+      <form action="/resultcity/" method="post">
+        <div class="info">
+          <p>Click on city if you want to see the ctites that are in our dataset.</p>
+        </div>
+        <button id="search" href='/resultcity?submitted=true' class="button">City</button>
+      </form>
+    </div>   
+    <p>Please enter the name of a French city in this format : Paris, and select the type of information needed</p>
+    </div>
+    <form action="/resultweather/" method="post">
+      <div class="info">
+        <input type="text" name="city" placeholder="City">
+        <select name="type_query">
+          <option value="" disabled selected>City</option>
+          <option value="Weather">Weather</option>
+          <option value="Air_Pollution">Air Pollution</option>
+          <option value="both">Both</option>
+        </select>
+      </div>
+      <button id="search" href='/resultweather?submitted=true' class="button">Weather</button>
+    </form>
+  </div>   
+    <script>
+          if (document.location.href.indexOf("submitted=true") > -1){
+            $.dialog({
+                title: 'Results',
+                content: 'Here are the results of your query',
+            });
+        }
+            
+      </script>
+    
+</body>
+</html>
