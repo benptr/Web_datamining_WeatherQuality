@@ -11,7 +11,7 @@
 </h1> 
 
 ## Table of contents
-  * [About the project](#about_the_project) <br>
+  * [About the project](#about_the_project) 
     * [Introduction](#introduction)
     * [Tasks achieved](#tasks_achieved)
     * [Conclusion](#conclusion)
