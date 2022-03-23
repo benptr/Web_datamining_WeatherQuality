@@ -74,3 +74,7 @@ You have to launch the [Script Python](https://github.com/benptr/Web_datamining_
 ![image](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/screen1.png)
 <br> Then you have to click on the link that will open the app on the browser.
 ![image](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/screen3.png)
+You will arrive on this page, where you can display all the city and their precise coordinates on a map (by clicking on the first city button)
+You can also search by city and select different options to display about the weather or AirPollution or both. <br> 
+To make it run, you then have to follow the written instructions to display the wanted result. Here is what we can obtain by typing "Paris" and selecting AirPollution Option
+![image](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/screen2.png)
