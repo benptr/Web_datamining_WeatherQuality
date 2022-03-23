@@ -78,5 +78,5 @@ Then you have to click on the link that will open the app on the browser. <br>
 You will arrive on this page, where you can display all the city and their precise coordinates on a map (by clicking on the first city button)
 You can also search by city and select different options to display about the weather or AirPollution or both. <br> 
 To make it run, you then have to follow the written instructions to display the wanted result. Here is what we can obtain by typing "Bordeaux" and selecting AirPollution Option: 
-<br>
+<br><br>
 ![image](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/results_air_pollution.PNG)
