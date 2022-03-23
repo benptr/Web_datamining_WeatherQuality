@@ -16,7 +16,6 @@
     * [Tasks achieved](#tasks_achieved)
     * [Conclusion](#conclusion)
   * [Usage - API](#usage)
-  * [Architecture](#architecture)
 
 
 ## About the project
@@ -28,11 +27,14 @@
 For this project, we have chosen had to study a compilation of 3 different datasets from 3 API about weather, Air Quality and Location using geolocated data, in order to realise an Weather Quality application for French cities. <br> We have chosen to realise this project in Python Language, as we are more familiar with it. 
 
 <br> 
-The project contains a preliminary data selection, data cleaning, data exploration and data exportation 
-
-The project also includes the SPARQL queries we invented on Protege according to our dataset.
-
-Finally, the project also includes an application displaying the different criterias we want to analyse and predict.  
+*Main files*
+The project contains a preliminary data selection ([see this file](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py), data cleaning, data exploration and data exportation on a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb).
+<br>
+The project also include our primary [ontology model](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/ontology.owl) and the [populated one](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/final_ontology.owl), both realized on Protégé. 
+<br>
+The project also includes the SPARQL queries we created on Protege according to our dataset listed in this [Word document](https://github.com/benptr/Web_datamining_WeatherQuality/main/SPARQL_QUERIES.docx)
+<br>
+Finally, the project also includes an application displaying the different criterias we want to analyse and predict, accessible by running this [file](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py)
 
 ### Tasks achieved 
 
@@ -64,7 +66,8 @@ We created several SPARQL Queries directly on the Snap SPARQL Query window of Pr
 Here is the [Script Python](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py) we used to create our final application. We decided to use the framework Flask to design our web app. <br> In this app, the user can get the location of any French city on a map and can display Weather information and Air Quality information of a specific city. We used html to try to make our app user friendly. 
 <br> <br>
 ### Conclusion
-This project has represented a real challenge for our team, both in its understanding and its realization. Indeed, we did not necessarily have all the skills required from the point of view of ontologies / creation of SPARQL queries, which required significant research work. We appreciated the freedom taken on this subject to choose our own dataset and clean our data according to the targeted features. Finally, we also enjoyed making the final functional application.
+This project has represented a real challenge for our team, both in its understanding and its realization. Indeed, we did not necessarily have all the skills required from the point of view of ontologies / creation of SPARQL queries, which required significant research work. We appreciated the freedom taken on this subject to choose our own dataset and clean our data according to the targeted features. Finally, we also enjoyed making the final functional application. <br>
+In amelioration, we thought about actualising data in real time by turning our notebook into a Python script that would actualize by itself but we decided not to included this in our final version of our web app because this ncreases to much the computational demand. We prefered to have a quicker access to the results displayed rather than a two minutes or more running app every time the user enters some information.
 
 ### Usage - API 
 To launch our API, you need to clone (or fork) the whole project. 
