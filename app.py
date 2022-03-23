@@ -52,59 +52,59 @@ def CityWeather(city,type):
     g.namespace_manager.bind('owl', Namespace('http://www.w3.org/2002/07/owl#'))
     g.namespace_manager.bind('xsd', Namespace('http://www.w3.org/2001/XMLSchema#'))
     g.parse("final_ontology.owl")
-    query = "SELECT ?x WHERE { ?x ns:city \""+city+"\"}"
+    query = "SELECT DISTINCT ?name ?lon ?lat WHERE { ?target ns:city ?city . ?target ns:city ?name. ?target ns:longitude ?lon . ?target ns:latitude ?lat. } ORDER BY ?name"
     res = g.query(query)
+    lat,lon = 0,0
     for elmt in res:
         element =  elmt.asdict()
-        print(element)
         for key in element:
             element[key] = element[key].toPython()
-        response.append(element)
-    lat,lon = response[0]['lat'],response[0]['lon']
-    response = []
+        if element['name'] == city:
+            lat,lon =element['lat'],element['lon']
+    print(lat,lon)
+
     if type == "Weather":
-        query = "SELECT DISTINCT ?des ?hum ?temp WHERE { ?target ns:city ?Weather . ?target ns:city \""+city+"\" . ?target ns:description ?des . ?target ns:humidity ?hum . ?target ns:temp ?temp. }"
+        query = "SELECT DISTINCT ?name ?des ?temp ?min ?max ?hum WHERE { ?target ns:city ?Weather. ?target ns:city ?name. ?target ns:description ?des. ?target ns:temp ?temp. ?target ns:temp_min ?min. ?target ns:temp_max ?max. ?target ns:humidity ?hum. }"
         res = g.query(query)
         for elmt in res:
             element =  elmt.asdict()
             for key in element:
                 element[key] = element[key].toPython()
-            response.append(element)
-            print(element)
-            input()
-        response = response[:100]
+            if element['name'] == city:
+                response.append(element)
+        print(response)
         for i in range(len(response)):
-            print(response[i]['name'],response[i]['lat'],response[i]['lon'])
-            ToHtml += "<li><b>" + str(response[i]['name']) + "</b> — lat: "  + str(response[i]['lat']) + "; lon: " + str(response[i]['lon']) +"</li>"
-            ToJs += "L.marker([" + str(response[i]['lat']) + ", " + str(response[i]['lon']) + "]).addTo(mymap).bindPopup('City<br><b>" + str(response[i]['name']) + "</b><br>lat. " + str(response[i]['lat']) + "; lon: " + str(response[i]['lon']) + "');\n"
+            ToHtml += "<li><b>" + str(response[i]['name']) + "</b> — description: "  + str(response[i]['des']) + "; temperature: " + str(response[i]['temp']) +"; min: " + str(response[i]['min']) +"; max: " + str(response[i]['max']) +"; humidity: " + str(response[i]['hum']) +"</li>"
+            ToJs += "L.marker([" + str(lat) + ", " + str(lon) + "]).addTo(mymap).bindPopup('City<br><b>" + str(response[i]['name']) + "</b><br>description: "  + str(response[i]['des']) + "; temperature: " + str(response[i]['temp']) +"; min: " + str(response[i]['min']) +"; max: " + str(response[i]['max']) +"; humidity: " + str(response[i]['hum']) + "');\n"
         return (ToHtml, ToJs,lat,lon)
     elif type == "Air_Pollution":
-        query = "SELECT DISTINCT ?des ?hum ?temp WHERE { ?target ns:city ?Weather . ?target ns:city {} . ?target ns:description ?des . ?target ns:humidity ?hum . ?target ns:temp ?temp. }".format(city)
+        
+        query = "SELECT DISTINCT ?name ?o3a ?o3p ?aqi WHERE { ?target ns:city ?Airquf. ?target ns:city ?name. ?target ns:aqi ?aqi. ?target ns:today_o3_average ?o3a. ?target ns:tomorrow_o3_average ?o3p.}"
         res = g.query(query)
         for elmt in res:
             element =  elmt.asdict()
             for key in element:
                 element[key] = element[key].toPython()
-            response.append(element)
-        response = response[:100]
+            if element['name'] == city:
+                response.append(element)
+        print(response)
         for i in range(len(response)):
-            print(response[i]['name'],response[i]['lat'],response[i]['lon'])
-            ToHtml += "<li><b>" + str(response[i]['name']) + "</b> — lat: "  + str(response[i]['lat']) + "; lon: " + str(response[i]['lon']) +"</li>"
-            ToJs += "L.marker([" + str(response[i]['lat']) + ", " + str(response[i]['lon']) + "]).addTo(mymap).bindPopup('City<br><b>" + str(response[i]['name']) + "</b><br>lat. " + str(response[i]['lat']) + "; lon: " + str(response[i]['lon']) + "');\n"
+            ToHtml += "<li><b>" + str(response[i]['name']) + "</b> — o3 today: "  + str(response[i]['o3a']) + "; o3 tomorrow: " + str(response[i]['o3p']) +"; aqi: " + str(response[i]['aqi']) +"</li>"
+            ToJs += "L.marker([" + str(lat) + ", " + str(lon) + "]).addTo(mymap).bindPopup('City<br><b>" + str(response[i]['name']) + "</b><br>o3 today: "  + str(response[i]['o3a']) + "; o3 tomorrow: " + str(response[i]['o3p']) +"; aqi: " + str(response[i]['aqi']) + "');\n"
         return (ToHtml, ToJs,lat,lon)
     else:
-        query = "SELECT DISTINCT ?des ?hum ?temp WHERE { ?target ns:city ?Weather . ?target ns:city "+city+" . ?target ns:description ?des . ?target ns:humidity ?hum . ?target ns:temp ?temp. }"
+        query = "SELECT DISTINCT ?name ?des ?temp ?min ?max ?hum WHERE { ?target ns:city ?Weather. ?target ns:city ?name. ?target ns:description ?des. ?target ns:temp ?temp. ?target ns:temp_min ?min. ?target ns:temp_max ?max. ?target ns:humidity ?hum. }"
         res = g.query(query)
         for elmt in res:
             element =  elmt.asdict()
             for key in element:
                 element[key] = element[key].toPython()
-            response.append(element)
-        response = response[:100]
+            if element['name'] == city:
+                response.append(element)
+        print(response)
         for i in range(len(response)):
-            print(response[i]['name'],response[i]['lat'],response[i]['lon'])
-            ToHtml += "<li><b>" + str(response[i]['name']) + "</b> — lat: "  + str(response[i]['lat']) + "; lon: " + str(response[i]['lon']) +"</li>"
-            ToJs += "L.marker([" + str(response[i]['lat']) + ", " + str(response[i]['lon']) + "]).addTo(mymap).bindPopup('City<br><b>" + str(response[i]['name']) + "</b><br>lat. " + str(response[i]['lat']) + "; lon: " + str(response[i]['lon']) + "');\n"
+            ToHtml += "<li><b>" + str(response[i]['name']) + "</b> — description: "  + str(response[i]['des']) + "; temperature: " + str(response[i]['temp']) +"; min: " + str(response[i]['min']) +"; max: " + str(response[i]['max']) +"; humidity: " + str(response[i]['hum']) +"</li>"
+            ToJs += "L.marker([" + str(lat) + ", " + str(lon) + "]).addTo(mymap).bindPopup('City<br><b>" + str(response[i]['name']) + "</b><br>description: "  + str(response[i]['des']) + "; temperature: " + str(response[i]['temp']) +"; min: " + str(response[i]['min']) +"; max: " + str(response[i]['max']) +"; humidity: " + str(response[i]['hum']) + "');\n"
         return (ToHtml, ToJs,lat,lon)
     
 # Creating API generation functions
