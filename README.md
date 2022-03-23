@@ -64,5 +64,4 @@ We created several SPARQL Queries directly on the Snap SPARQL Query window of Pr
 Here is the [Script Python](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/app.py) we used to create our final application. We decided to use the framework Flask to design our web app. <br> In this app, the user can get the location of any French city on a map and can display Weather information and Air Quality information of a specific city. We used html to try to make our app user friendly. 
 <br> <br>
 ### Conclusion
-This project allowed us to learn. It was i
-
+This project has represented a real challenge for our team, both in its understanding and its realization. Indeed, we did not necessarily have all the skills required from the point of view of ontologies / creation of SPARQL queries, which required significant research work. We appreciated the freedom taken on this subject to choose our own dataset and clean our data according to the targeted features. Finally, we also enjoyed making the final functional application.
