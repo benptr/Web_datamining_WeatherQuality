@@ -9,6 +9,13 @@
     -->
   </head>
   <body>
+
+    <div>
+      <img src="https://yourutahyourfuture.org/media/k2/items/cache/8b6e33345ac8d5ffd9cf0d107a7d9e9d_Generic.jpg" alt="Logo air" align="right" width="200px" height="200px" 
+      style="float:right;margin:0 630px 0 20px;"/>
+    </div>
+
+
     <div class="main-block">
       <FONT size="5pt"> 
       <FONT color="LightSeaGreen"> 
@@ -17,25 +24,27 @@
       </FONT>
     </div>
       <form action="/resultcity/" method="post">
+        
     
     <div class="info">
           <p>Click on the "City" button if you want to have a look at some of the cities that are in our dataset.</p>
-        <button id="search" href='/resultcity?submitted=true' class="button"> City </button>
+        <button id="search" href='/resultcity?submitted=true' class="button" style="height:30px; width:80px; color:azure; background-color:lightseagreen; font-weight:bold;
+        float:left;margin:0 20px 20px 270px;"> City </button>
       </form>
     </div>  
 
-    <div>
-      <img src="https://yourutahyourfuture.org/media/k2/items/cache/8b6e33345ac8d5ffd9cf0d107a7d9e9d_Generic.jpg" align="right" width="200px" height="200px"/>
-    </div>
-
-
 
 		<br>
+    <br>
+    <br>
     <p>Please enter the name of a French city in this format : Paris</p>
-    <p>Select the type of information you want to consult.</p>
     <form action="/resultweather/" method="post">
       <div class="info">
         <input type="text" name="city" placeholder="City">
+        <br>
+        <br>
+
+        <p>Select the type of information you want to consult.</p>
         <select name="type_query">
           <option value="" disabled selected>City</option>
           <option value="Weather">Weather</option>
@@ -45,7 +54,8 @@
       </div>
 
       <br>
-      <button id="search" href='/resultweather?submitted=true' class="button">Weather</button>
+      <button id="search" href='/resultweather?submitted=true' class="button" style="height:50px; width:150px; color:azure; background-color:lightseagreen; font-weight:bold;
+      float:left;margin:0px 20px 40px 85px;">Get the result</button>
     </form>
  
     <script>
