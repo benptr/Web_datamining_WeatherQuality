@@ -26,9 +26,10 @@
 <br>
 For this project, we have chosen had to study a compilation of 3 different datasets from 3 API about weather, Air Quality and Location using geolocated data, in order to realise an Weather Quality application for French cities. <br> We have chosen to realise this project in Python Language, as we are more familiar with it. 
 
-<br> 
+
+
 **Main files and steps** 
-<br>
+
 The project contains a preliminary data selection [see this file](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py), data cleaning, data exploration and data exportation on a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb).
 <br>
 The project also include our primary [ontology model](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/ontology.owl) and the [populated one](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/final_ontology.owl), both realized on Protégé. 
