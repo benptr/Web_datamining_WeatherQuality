@@ -29,6 +29,7 @@ For this project, we have chosen had to study a compilation of 3 different datas
 
 
 **Main files and steps** 
+
 The project contains a preliminary data selection [see this file](https://github.com/benptr/Web_datamining_WeatherQuality/main/apiAirQuality.py), data cleaning, data exploration and data exportation on a [Jupyter Notebook](https://github.com/benptr/Web_datamining_WeatherQuality/main/Data_creation_csv.ipynb).
 <br>
 The project also include our primary [ontology model](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/ontology.owl) and the [populated one](https://github.com/benptr/Web_datamining_WeatherQuality/blob/main/final_ontology.owl), both realized on Protégé. 
